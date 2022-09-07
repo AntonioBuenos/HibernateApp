@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="363b7745-e371-4899-97dd-235cf7f459ff" name="Changes" comment="One to many 3.">
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/smirnov/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/smirnov/App.java" afterDir="false" />
-    </list>
+    <list default="true" id="363b7745-e371-4899-97dd-235cf7f459ff" name="Changes" comment="One to many 4." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -73,7 +71,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662551143815</updated>
-      <workItem from="1662551146451" duration="16708000" />
+      <workItem from="1662551146451" duration="17078000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <created>1662558965601</created>
@@ -110,7 +108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662583956430</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="One to many 4.">
+      <created>1662584443983</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1662584443983</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,6 +138,7 @@
     <MESSAGE value="One to many." />
     <MESSAGE value="One to many 2." />
     <MESSAGE value="One to many 3." />
-    <option name="LAST_COMMIT_MESSAGE" value="One to many 3." />
+    <MESSAGE value="One to many 4." />
+    <option name="LAST_COMMIT_MESSAGE" value="One to many 4." />
   </component>
 </project>
