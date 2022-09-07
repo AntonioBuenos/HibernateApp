@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="363b7745-e371-4899-97dd-235cf7f459ff" name="Changes" comment="One to many." />
+    <list default="true" id="363b7745-e371-4899-97dd-235cf7f459ff" name="Changes" comment="One to many 2.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/smirnov/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/smirnov/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/smirnov/model/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/smirnov/model/Item.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,7 +75,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662551143815</updated>
-      <workItem from="1662551146451" duration="15781000" />
+      <workItem from="1662551146451" duration="16395000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <created>1662558965601</created>
@@ -94,7 +98,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662583114410</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="One to many 2.">
+      <created>1662583345778</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1662583345778</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,6 +126,7 @@
     <MESSAGE value="Initial commit." />
     <MESSAGE value="Saving object to DB &amp; ID ignorance by Hibernate." />
     <MESSAGE value="One to many." />
-    <option name="LAST_COMMIT_MESSAGE" value="One to many." />
+    <MESSAGE value="One to many 2." />
+    <option name="LAST_COMMIT_MESSAGE" value="One to many 2." />
   </component>
 </project>

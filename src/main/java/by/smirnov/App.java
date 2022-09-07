@@ -22,15 +22,18 @@ public class App {
 
 /*            Person person = session.get(Person.class, 3);
             System.out.println(person);
-
             List<Item> items = person.getItems();
             System.out.println(items);*/
 
-            Item item = session.get(Item.class, 7);
+/*            Item item = session.get(Item.class, 7);
             System.out.println(item);
-
             Person person1 = item.getOwner();
-            System.out.println(person1);
+            System.out.println(person1);*/
+
+            Person person = session.get(Person.class, 2);
+            Item newItem = new Item("Item from Hibernate", person);
+            person.getItems().add(newItem);
+            session.persist(newItem);
 
             session.getTransaction().commit();
         }finally {

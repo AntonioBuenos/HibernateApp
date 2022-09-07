@@ -26,8 +26,9 @@ public class Item {
     @JoinColumn(name = "person_id", referencedColumnName = "id")
     private Person owner;
 
-    public Item(String itemName) {
+    public Item(String itemName, Person owner) {
         this.itemName = itemName;
+        this.owner = owner;
     }
 
     @Override
