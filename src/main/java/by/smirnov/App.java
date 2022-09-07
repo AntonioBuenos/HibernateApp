@@ -6,6 +6,8 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class App {
@@ -30,9 +32,15 @@ public class App {
             Person person1 = item.getOwner();
             System.out.println(person1);*/
 
-            Person person = session.get(Person.class, 2);
+/*            Person person = session.get(Person.class, 2);
             Item newItem = new Item("Item from Hibernate", person);
             person.getItems().add(newItem);
+            session.persist(newItem);*/
+
+            Person person = new Person("Sinyaya Boroda", 30);
+            Item newItem = new Item("Superitem", person);
+            person.setItems(new ArrayList<Item>(Collections.singletonList(newItem)));
+            session.persist(person);
             session.persist(newItem);
 
             session.getTransaction().commit();
