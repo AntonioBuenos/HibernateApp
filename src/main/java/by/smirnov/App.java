@@ -50,9 +50,15 @@ public class App {
             }
             person.getItems().clear();*/
 
-            Person person = session.get(Person.class, 2);
+/*            Person person = session.get(Person.class, 2);
             session.remove(person); //SQL
-            person.getItems().forEach(i -> i.setOwner(null)); //для правильного состояния кэша
+            person.getItems().forEach(i -> i.setOwner(null)); //для правильного состояния кэша*/
+
+            Person person = session.get(Person.class, 4);
+            Item item = session.get(Item.class, 1);
+            item.getOwner().getItems().remove(item);
+            item.setOwner(person);
+            person.getItems().add(item);
 
             session.getTransaction().commit();
         }finally {
