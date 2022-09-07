@@ -43,12 +43,16 @@ public class App {
             session.persist(person);
             session.persist(newItem);*/
 
-            Person person = session.get(Person.class, 3);
+/*            Person person = session.get(Person.class, 3);
             List<Item> items = person.getItems();
             for (Item item : items) {
                 session.remove(item);
             }
-            person.getItems().clear();
+            person.getItems().clear();*/
+
+            Person person = session.get(Person.class, 2);
+            session.remove(person); //SQL
+            person.getItems().forEach(i -> i.setOwner(null)); //для правильного состояния кэша
 
             session.getTransaction().commit();
         }finally {
