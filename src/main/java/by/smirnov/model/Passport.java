@@ -11,9 +11,13 @@ import java.io.Serializable;
 @ToString
 @Entity
 @Table(name = "Passport")
-public class Passport implements Serializable {
+public class Passport {
 
     @Id
+    @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
+
     @OneToOne
     @JoinColumn(name = "person_id", referencedColumnName = "id")
     private Person person;

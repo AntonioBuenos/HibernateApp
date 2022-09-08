@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="363b7745-e371-4899-97dd-235cf7f459ff" name="Changes" comment="Cascades.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/smirnov/model/Passport.java" afterDir="false" />
+    <list default="true" id="363b7745-e371-4899-97dd-235cf7f459ff" name="Changes" comment="One to One 1.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/smirnov/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/smirnov/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/smirnov/model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/smirnov/model/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/smirnov/model/Passport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/smirnov/model/Passport.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +74,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662551143815</updated>
-      <workItem from="1662551146451" duration="22383000" />
+      <workItem from="1662551146451" duration="23164000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <created>1662558965601</created>
@@ -148,7 +146,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662616799120</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="One to One 1.">
+      <created>1662619293190</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1662619293190</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,6 +181,7 @@
     <MESSAGE value="One to many 6." />
     <MESSAGE value="One to many 7." />
     <MESSAGE value="Cascades." />
-    <option name="LAST_COMMIT_MESSAGE" value="Cascades." />
+    <MESSAGE value="One to One 1." />
+    <option name="LAST_COMMIT_MESSAGE" value="One to One 1." />
   </component>
 </project>
