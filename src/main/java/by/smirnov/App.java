@@ -1,6 +1,7 @@
 package by.smirnov;
 
 import by.smirnov.model.Item;
+import by.smirnov.model.Passport;
 import by.smirnov.model.Person;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -15,11 +16,12 @@ public class App {
 
         Configuration configuration = new Configuration()
                 .addAnnotatedClass(Person.class)
-                .addAnnotatedClass(Item.class);
+                .addAnnotatedClass(Item.class)
+                .addAnnotatedClass(Passport.class);
         SessionFactory sessionFactory = configuration.buildSessionFactory();
         Session session = sessionFactory.getCurrentSession();
 
-        try{
+        try {
             session.beginTransaction();
 
 /*            Person person = session.get(Person.class, 3);
@@ -62,15 +64,18 @@ public class App {
 
             session.refresh(person);*/
 
-            Person person = new Person("Cascading Person", 36);
+/*            Person person = new Person("Cascading Person", 36);
             person.addItem(new Item("SuperGood1"));
             person.addItem(new Item("SuperGood2"));
-            person.addItem(new Item("SuperGood3"));
+            person.addItem(new Item("SuperGood3"));*/
 
+            Person person = new Person("Brand New Person", 1);
+            Passport passport = new Passport(1234567);
+            person.setPassport(passport);
             session.persist(person);
 
             session.getTransaction().commit();
-        }finally {
+        } finally {
             sessionFactory.close();
         }
 

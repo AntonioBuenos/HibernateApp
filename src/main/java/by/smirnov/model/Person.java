@@ -31,6 +31,10 @@ public class Person {
     @Cascade(org.hibernate.annotations.CascadeType.ALL)
     private List<Item> items;
 
+    @OneToOne(mappedBy = "person")
+    @Cascade(org.hibernate.annotations.CascadeType.ALL)
+    private Passport passport;
+
     public Person(String name, int age) {
         this.name = name;
         this.age = age;
@@ -49,5 +53,10 @@ public class Person {
                 ", name='" + name + '\'' +
                 ", age=" + age +
                 '}';
+    }
+
+    public void setPassport(Passport passport) {
+        this.passport = passport;
+        passport.setPerson(this);
     }
 }
