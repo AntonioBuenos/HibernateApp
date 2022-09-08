@@ -3,8 +3,10 @@ package by.smirnov.model;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.hibernate.annotations.Cascade;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Getter
@@ -26,11 +28,18 @@ public class Person {
     private int age;
 
     @OneToMany(mappedBy = "owner")
+    @Cascade(org.hibernate.annotations.CascadeType.ALL)
     private List<Item> items;
 
     public Person(String name, int age) {
         this.name = name;
         this.age = age;
+    }
+
+    public void addItem(Item item){
+        if(this.items==null) this.items=new ArrayList<>();
+        this.items.add(item);
+        item.setOwner(this);
     }
 
     @Override

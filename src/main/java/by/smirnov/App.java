@@ -35,7 +35,7 @@ public class App {
 /*            Person person = session.get(Person.class, 2);
             Item newItem = new Item("Item from Hibernate", person);
             person.getItems().add(newItem);
-            session.persist(newItem);*/
+            session.persist(newItem);
 
 /*            Person person = new Person("Sinyaya Boroda", 30);
             Item newItem = new Item("Superitem", person);
@@ -54,11 +54,20 @@ public class App {
             session.remove(person); //SQL
             person.getItems().forEach(i -> i.setOwner(null)); //для правильного состояния кэша*/
 
-            Person person = session.get(Person.class, 4);
+/*            Person person = session.get(Person.class, 4);
             Item item = session.get(Item.class, 1);
             item.getOwner().getItems().remove(item);
             item.setOwner(person);
             person.getItems().add(item);
+
+            session.refresh(person);*/
+
+            Person person = new Person("Cascading Person", 36);
+            person.addItem(new Item("SuperGood1"));
+            person.addItem(new Item("SuperGood2"));
+            person.addItem(new Item("SuperGood3"));
+
+            session.persist(person);
 
             session.getTransaction().commit();
         }finally {

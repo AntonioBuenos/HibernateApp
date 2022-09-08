@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="363b7745-e371-4899-97dd-235cf7f459ff" name="Changes" comment="One to many 6.">
+    <list default="true" id="363b7745-e371-4899-97dd-235cf7f459ff" name="Changes" comment="One to many 7.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/smirnov/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/smirnov/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/smirnov/model/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/smirnov/model/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/smirnov/model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/smirnov/model/Person.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +76,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662551143815</updated>
-      <workItem from="1662551146451" duration="17702000" />
+      <workItem from="1662551146451" duration="19989000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <created>1662558965601</created>
@@ -131,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662584987787</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="One to many 7.">
+      <created>1662585282576</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1662585282576</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,6 +167,7 @@
     <MESSAGE value="One to many 4." />
     <MESSAGE value="One to many 5." />
     <MESSAGE value="One to many 6." />
-    <option name="LAST_COMMIT_MESSAGE" value="One to many 6." />
+    <MESSAGE value="One to many 7." />
+    <option name="LAST_COMMIT_MESSAGE" value="One to many 7." />
   </component>
 </project>
