@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="363b7745-e371-4899-97dd-235cf7f459ff" name="Changes" comment="One to One 2.">
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/smirnov/model/Actor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/smirnov/model/Movie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="363b7745-e371-4899-97dd-235cf7f459ff" name="Changes" comment="Many to Many.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/smirnov/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/smirnov/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/smirnov/model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/smirnov/model/Person.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +96,7 @@
       <option name="presentableId" value="Default" />
       <updated>1662551143815</updated>
       <workItem from="1662551146451" duration="23793000" />
-      <workItem from="1662711626042" duration="3738000" />
+      <workItem from="1662711626042" duration="5878000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <created>1662558965601</created>
@@ -186,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662619946488</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Many to Many.">
+      <created>1662715462444</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1662715462444</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,6 +219,7 @@
     <MESSAGE value="Cascades." />
     <MESSAGE value="One to One 1." />
     <MESSAGE value="One to One 2." />
-    <option name="LAST_COMMIT_MESSAGE" value="One to One 2." />
+    <MESSAGE value="Many to Many." />
+    <option name="LAST_COMMIT_MESSAGE" value="Many to Many." />
   </component>
 </project>

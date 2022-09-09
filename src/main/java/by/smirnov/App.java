@@ -44,14 +44,24 @@ public class App {
             session.persist(movie2);
             session.persist(actor3);*/
 
-            Actor actor = session.get(Actor.class, 2);
+/*            Actor actor = session.get(Actor.class, 2);
             System.out.println(actor.getMovies());
 
             Movie movieToRemove = actor.getMovies().get(0);
             actor.getMovies().remove(0);
-            movieToRemove.getActors().remove(actor);
+            movieToRemove.getActors().remove(actor);*/
 
-            session.getTransaction().commit();
+            Person person = session.get(Person.class, 1);
+            System.out.println("Получили человека");
+
+            System.out.println(person.getItems()); //Получили связанные сущности (Lazy)
+            // + потом исправили Fetch на EAGER -> получили (Eager)
+
+/*            Item item = session.get(Item.class, 1);
+            System.out.println("Получили товар");
+            System.out.println(item.getOwner()); //Получили связанные сущности (Eager)
+
+            session.getTransaction().commit();*/
         }
 
 
