@@ -1,6 +1,7 @@
 package by.smirnov;
 
 import by.smirnov.model.*;
+import org.hibernate.Hibernate;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
@@ -18,7 +19,7 @@ public class App {
                 .addAnnotatedClass(Passport.class)
                 .addAnnotatedClass(Actor.class)
                 .addAnnotatedClass(Movie.class);
-        SessionFactory sessionFactory = configuration.buildSessionFactory();
+        final SessionFactory sessionFactory = configuration.buildSessionFactory();
         try (sessionFactory) {
             Session session = sessionFactory.getCurrentSession();
             session.beginTransaction();
@@ -59,11 +60,28 @@ public class App {
 
 /*            Item item = session.get(Item.class, 1);
             System.out.println("Получили товар");
-            System.out.println(item.getOwner()); //Получили связанные сущности (Eager)
+            System.out.println(item.getOwner()); //Получили связанные сущности (Eager)*/
 
-            session.getTransaction().commit();*/
+            session.getTransaction().commit();
+
+            SessionFactory sessionFactory2 = configuration.buildSessionFactory();
+
+            session = sessionFactory2.getCurrentSession();
+            session.beginTransaction(); // Вторая сессия
+
+
+            person = (Person) session.merge(person);
+            Hibernate.initialize(person.getItems());
+            /*
+            // второй вариант, менее предпочтительный
+            List<Item> items = session.createQuery("select i from Item i where i.owner.id=:personId", Item.class)
+                    .setParameter("personId", person.getId()).getResultList();
+                    */
+
+            session.getTransaction().commit();
+
+            System.out.println(person.getItems());
         }
-
 
 /*        Configuration configuration = new Configuration()
                 .addAnnotatedClass(Person.class)
